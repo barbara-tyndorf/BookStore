@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03d0d388-aa73-45cd-9bb4-97511b14714d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/testy/META-INF/testy.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testy/Basket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testy/Basket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testy/BasketTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testy/BasketTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testy/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testy/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testy/BookList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testy/BookList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testy/BookListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testy/BookListTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testy/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testy/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Basket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BasketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasketTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="03d0d388-aa73-45cd-9bb4-97511b14714d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/src/BasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -542,7 +527,7 @@
     <entry file="file://$PROJECT_DIR$/src/BasketTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
