@@ -5,42 +5,38 @@ public class Basket {
 
     List<Book> basket = new ArrayList<>();
     List<Book> bookList = new ArrayList<>();
-//    BookList bookList = new BookList();
 
-    public void addToBasket(String tytul) {
+    public void addToBasket(String title) {
 
+        if (title == null && title.equals("")) {
+            throw new IllegalArgumentException("Book parameters can not be empty");
+        }
         for (int i = 0; i < bookList.size(); i++) {
 
-            if (bookList.get(i).tytul == tytul) {
+            if (bookList.get(i).title.equals(title)) {
                 basket.add(bookList.get(i));
-                basket.get(i).ilosc++;
 
-//               for (int j = 0; j < basket.size(); j++) {
-//
-//                    if (basket.get(i) == basket.get(j)) {
-//                        basket.get(i).ilosc++;
-//                    }
-//                }
+            } else {
+                throw new IllegalArgumentException("We do not have this book");
             }
-//            String dodanyTytul = basket.get(i).tytul;
-//
-//            for (int j = 0; j < basket.size(); j++) {
-//                if (basket.get(j).tytul == dodanyTytul) {
-//                    ilosc++;
-//                }
-//            }
         }
     }
-
 
     public List<Book> showBasket() {
 
         for (int i = 0; i < basket.size(); i++) {
-            basket.get(i);
 
-            System.out.println(basket.get(i).tytul + " "
-                    + basket.get(i).autor + " " + basket.get(i).cena + " zł, ilość: "
-                    + basket.get(i).ilosc + " szt.");
+            for (int j = 0; j < basket.size(); j++) {
+
+                if (basket.get(i) == basket.get(j)) {
+                    basket.get(i).amount++;
+                    basket.remove(j);
+                }
+            }
+
+            System.out.println(basket.get(i).title + " "
+                    + basket.get(i).author + " " + basket.get(i).price + " zł, ilość: "
+                    + basket.get(i).amount + " szt.");
         }
         return basket;
     }
@@ -52,31 +48,24 @@ public class Basket {
     public void removeBookFromBasket(String tytul) {
 
         for (int i = 0; i < basket.size(); i++) {
-            int ilosc = bookList.get(i).ilosc;
-            if (basket.get(i).tytul == tytul) {
-                basket.remove(i);
 
-                for (int j = 0; j < basket.size(); j++) {
-                    if (basket.get(i) == basket.get(j)) {
-                        basket.get(i).ilosc--;
-                    }
-                }
+            if (basket.get(i).title.equals(tytul)) {
+                basket.remove(i);
+                basket.get(i).amount--;
             }
         }
     }
 
     public int totalAmountBooksInBasket() {
-        int total = basket.size();
-        return total;
+        int totalAmount = basket.size();
+        return totalAmount;
     }
 
     public double totalPrice() {
-        double suma = 0;
+        double totalPrice = 0;
         for (int i = 0; i < basket.size(); i++) {
-            suma = suma + basket.get(i).cena;
+            totalPrice = totalPrice + basket.get(i).price;
         }
-        return suma;
+        return totalPrice;
     }
-
-
 }

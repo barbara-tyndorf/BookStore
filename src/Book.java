@@ -1,14 +1,14 @@
 public class Book {
 
-    String tytul;
-    String autor;
-    double cena;
-    int ilosc;
+    String title;
+    String author;
+    double price;
+    int amount;
 
-    public Book(String tytul, String autor, double cena) {
-        this.tytul = tytul;
-        this.autor = autor;
-        this.cena = cena;
-        this.ilosc = ilosc;
+    public Book(String title, String author, double price, int amount) {
+        this.title = title;
+        this.author = author;
+        this.price = price;
+        this.amount = amount;
     }
 }
