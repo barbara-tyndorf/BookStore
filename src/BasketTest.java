@@ -7,8 +7,8 @@ public class BasketTest {
 
     private Basket basket;
 
-    Book book = new Book("Małgosia", "Nowak", 20, 1);
-    Book book1 = new Book("Jaś", "Kowalski", 15, 1);
+//    Book book = new Book("Małgosia", "Nowak", 20);
+//    Book book1 = new Book("Jaś", "Kowalski", 15);
 
 
     @BeforeEach
@@ -18,87 +18,57 @@ public class BasketTest {
 
     @Test
     public void testAddToBasket() {
-        BookList bookList = new BookList();
-        bookList.addNewBook(book);
-        bookList.addNewBook(book1);
-        bookList.addNewBook(book1);
         int sizeBefore = basket.basket.size();
-//        basket.basket.add(book);
-//        basket.basket.add(book1);
-//        basket.basket.add(book1);
-        basket.addToBasket("Jaś");
-        basket.addToBasket("Jaś");
-        basket.addToBasket("Małgosyeessia");
+        basket.addToBasket("Jaś","Kowalski", 2);
+        basket.addToBasket("Małgosia", "Nowak", 1);
         int sizeAfter = basket.basket.size();
-        assertEquals((sizeBefore + 3), sizeAfter);
+        assertEquals((sizeBefore + 2), sizeAfter);
 
     }
 
     @Test
     public void testShowBasket() {
-        basket.basket.add(book);
-        basket.basket.add(book1);
-        basket.basket.add(book1);
-//        basket.addToBasket("Jaś");
-//        basket.addToBasket("Małgosia");
-//        basket.addToBasket("Małgosia");
-        int amount = 3;
+        basket.addToBasket("Jaś","Kowalski", 2);
+        basket.addToBasket("Małgosia", "Nowak", 1);
+        int amount = 2;
         basket.showBasket();
         assertEquals(basket.basket.size(), amount);
+//        assertEquals(basket.basket.get(0).title, "Jaś");
 
     }
 
     @Test
     public void testCleanBasket() {
-        basket.basket.add(book);
-        basket.basket.add(book1);
-        basket.basket.add(book1);
-//        basket.addToBasket("Jaś");
-//        basket.addToBasket("Jaś");
-//        basket.addToBasket("Małgosia");
+        basket.addToBasket("Jaś","Kowalski", 2);
+        basket.addToBasket("Małgosia", "Nowak", 1);
         basket.cleanBasket();
         int sizeAfter = basket.basket.size();
         assertTrue(sizeAfter == 0);
     }
 
     @Test
-    public void testRemoveBookFromBasket(String tytuł) {
-        basket.basket.add(book);
-        basket.basket.add(book1);
-        basket.basket.add(book1);
-//        basket.addToBasket("Jaś");
-//        basket.addToBasket("Jaś");
-//        basket.addToBasket("Małgosia");
+    public void testRemoveBookFromBasket() {
+        basket.addToBasket("Jaś","Kowalski", 2);
+        basket.addToBasket("Małgosia", "Nowak", 1);
         int sizeBefore = basket.basket.size();
-        basket.basket.remove(1);
-//        basket.removeBookFromBasket("Małgosia");
+        basket.removeBookFromBasket("Małgosia", "Nowak");
         int sizeAfter = basket.basket.size();
         assertEquals(sizeBefore - 1, sizeAfter);
     }
 
     @Test
     public void testTotalAmountBooksInBasket() {
-        basket.basket.add(book);
-        basket.basket.add(book1);
-        basket.basket.add(book1);
-//        basket.addToBasket("Jaś");
-//        basket.addToBasket("Jaś");
-//        basket.addToBasket("Małgosia");
-
-        int ilosc = 3;
-        assertEquals(ilosc, basket.totalAmountBooksInBasket());
+        basket.addToBasket("Jaś","Kowalski", 2);
+        basket.addToBasket("Małgosia", "Nowak", 1);
+        int total = 2;
+        assertEquals(total, basket.totalAmountBooksInBasket());
 
     }
 
     @Test
     public void testTotalPrice() {
-//        basket.addToBasket("Jaś");
-//        basket.addToBasket("Jaś");
-//        basket.addToBasket("Małgosia");
-
-        basket.basket.add(book);
-        basket.basket.add(book1);
-        basket.basket.add(book1);
+        basket.addToBasket("Jaś","Kowalski", 2);
+        basket.addToBasket("Małgosia", "Nowak", 1);
         double expected = 50;
         double actual = basket.totalPrice();
         assertEquals(expected, actual);

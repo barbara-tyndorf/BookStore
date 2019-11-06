@@ -3,15 +3,18 @@ import java.util.List;
 
 public class BookList {
 
-    // Book book = new Book("Jaś i Małgosia", "Ignacy", 20, 1);
     List<Book> bookList = new ArrayList<>();
 
     public void addNewBook(Book book) {
-        if (book == null && book.equals("")) {
+        if (book == null) {
             throw new IllegalArgumentException("Book parameters can not be empty");
         } else {
             bookList.add(book);
         }
+    }
+
+    public List<Book> getBookList() {
+        return bookList;
     }
 
     public void removeBook(String title) {
@@ -23,9 +26,9 @@ public class BookList {
         }
     }
 
-    public void changeBookPrice(String tytul, double nowaCena) {
+    public void changeBookPrice(String title, String author, double nowaCena) {
         for (int i = 0; i < bookList.size(); i++) {
-            if (bookList.get(i).title == tytul) {
+            if (bookList.get(i).title.equals(title) && bookList.get(i).author.equals(author)) {
                 bookList.get(i).price = nowaCena;
                 break;
             }

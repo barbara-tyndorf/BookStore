@@ -5,10 +5,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class BookListTest {
+
     private BookList bookList;
-    Book book = new Book("Małgosia", "Nowak", 20, 1);
-    Book book1 = new Book("Jaś", "Kowalski", 15, 1);
-    Book book2 = new Book(null, null, 0, 0);
+    Book book = new Book("Małgosia", "Nowak", 20);
+    Book book1 = new Book("Jaś", "Kowalski", 15);
+//    Book book2 = new Book(null, null, 0);
 
     @BeforeEach
     public void setUp() {
@@ -20,10 +21,10 @@ public class BookListTest {
         int sizeBefore = bookList.bookList.size();
         bookList.addNewBook(book);
         bookList.addNewBook(book1);
-        bookList.addNewBook(null);
+//        bookList.addNewBook(null);
         int sizeAfter = bookList.bookList.size();
         assertEquals(sizeBefore + 2, sizeAfter);
-        assertNotNull(null);
+//        assertThrows(Exception);
     }
 
     @Test
@@ -41,9 +42,10 @@ public class BookListTest {
     @Test
     public void testChangeBookPrice() {
         int i = 0;
-        bookList.addNewBook(book);
-        String tytul = "Jaś";
-        bookList.changeBookPrice(tytul, 25);
+        bookList.addNewBook(book1);
+        String title = "Jaś";
+        String author = "Kowalski";
+        bookList.changeBookPrice(title, author, 25);
         double priceAfter = bookList.bookList.get(i).price;
         assertEquals(25, priceAfter);
 
