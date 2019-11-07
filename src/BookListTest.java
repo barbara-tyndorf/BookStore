@@ -29,11 +29,12 @@ public class BookListTest {
 
     @Test
     public void testRemoveBook() {
-        String tytul = "Małgosia";
+        String title = "Małgosia";
+        String author = "Nowak";
         bookList.addNewBook(book);
         bookList.addNewBook(book1);
         int sizeBefore = bookList.bookList.size();
-        bookList.removeBook(tytul);
+        bookList.removeBook(title, author);
         int sizeAfter = bookList.bookList.size();
         assertEquals((sizeBefore - 1), sizeAfter);
 

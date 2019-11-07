@@ -1,4 +1,4 @@
-import java.util.Map;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -13,15 +13,14 @@ public class Main {
 
         bookList.addNewBook(book);
         bookList.addNewBook(book1);
-        bookList.addNewBook(book);
+        bookList.addNewBook(book4);
 
         bookList.addNewBook(book3);
         bookList.addNewBook(book4);
         bookList.addNewBook(book4);
 
-        System.out.println(BookList.findByTitleAndAuthor("Jaś", "Małgosia"));
-
-
+        System.out.println(bookList.findByTitleAndAuthor("Jaś", "Małgosia"));
+        System.out.println(bookList.findByTitleAndAuthor("Co", "Tam"));
 
         Basket basket = new Basket();
         basket.add("Co", "Tam",1);
@@ -29,12 +28,14 @@ public class Main {
         basket.add("Jak", "Tam",3);
         basket.add("Jak", "Tam",1);
         basket.add("Janek", "Gosia",1);
+        basket.add("Janek", "Gosia",1);
         basket.add("Jaś", "Małgosia",1);
         basket.add("Jaś", "Małgosia",1);
 
 
-//        System.out.println(basket.totalAmountBooksInBasket());
-//        basket.totalPrice();
-//        basket.showContent();
+        System.out.println(basket.totalAmountBooksInBasket());
+        System.out.println(basket.totalPrice());
+        basket.showContent();
+        basket.cleanBasket();
     }
 }

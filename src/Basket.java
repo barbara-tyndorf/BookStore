@@ -4,20 +4,15 @@ import java.util.Map.Entry;
 public class Basket {
 
     Map<Book, Integer> content = new HashMap<>();
+    BookList booklist = new BookList();
 
-    /**
-     * If you want to add book by name and author call booklist static method
-     * basket.add(BookList.byNameAndAuthor(name, author));
-     *
-     *
-     * @param title, author
-     */
     public void add(String title, String author) {
         add(title, author, 1);
     }
 
     public void add(String title, String author, int amount) {
-        Book book = BookList.findByTitleAndAuthor(title, author);
+        Book book = booklist.findByTitleAndAuthor(title, author);
+        // dodać warunek, by nie przekraczać ilości książek w liście
         if (content.containsKey(book)) {
             int currentAmount = content.get(book);
             content.put(book, currentAmount + amount);
@@ -31,7 +26,7 @@ public class Basket {
     }
 
     public void remove(String title, String author) {
-        Book book = BookList.findByTitleAndAuthor(title, author);
+        Book book = booklist.findByTitleAndAuthor(title, author);
         content.remove(book);
     }
 

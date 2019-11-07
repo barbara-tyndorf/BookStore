@@ -6,45 +6,23 @@ public class BookList {
     List<Book> bookList = new ArrayList<>();
 
     public void addNewBook(Book book) {
-        if (book == null) {
-            throw new IllegalArgumentException("Book parameters can not be empty");
-        } else {
-            bookList.add(book);
-        }
+        BookListSingleton.INSTANCE.addNewBook(book);
     }
 
-    public static Book findByTitleAndAuthor(String title, String author) {
-        Book book = null;
-        List<Book> bookList = new BookList().getBookList();
-        for (Book chosenBook : bookList) {
-            if (chosenBook.title.equals(title)
-                    && chosenBook.author.equals(author)) {
-                book = chosenBook;
-                break;
-            }
-        }
+    public Book findByTitleAndAuthor(String title, String author) {
+        Book book = BookListSingleton.findByTitleAndAuthor(title, author);
         return book;
     }
 
     public List<Book> getBookList() {
-        return bookList;
+        return BookListSingleton.INSTANCE.getBookList();
     }
 
-    public void removeBook(String title) {
-        for (int i = 0; i < bookList.size(); i++) {
-            if (bookList.get(i).title == title) {
-                bookList.remove(i);
-                break;
-            }
+    public void removeBook(String title, String author) {
+        BookListSingleton.INSTANCE.removeBook(title, author);
         }
-    }
 
-    public void changeBookPrice(String title, String author, double nowaCena) {
-        for (int i = 0; i < bookList.size(); i++) {
-            if (bookList.get(i).title.equals(title) && bookList.get(i).author.equals(author)) {
-                bookList.get(i).price = nowaCena;
-                break;
-            }
-        }
+    public void changeBookPrice(String title, String author, double newPrice) {
+        BookListSingleton.INSTANCE.changeBookPrice(title, author, newPrice);
     }
 }
