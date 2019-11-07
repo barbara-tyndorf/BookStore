@@ -20,9 +20,7 @@ public class Main {
         bookList1.addNewBook(book4);
         bookList1.addNewBook(book4);
 
-        System.out.println(BookList.findByTitleAndAuthor("Co", "Jak"));
-
-
+        System.out.println(bookList.findByTitleAndAuthor("Co", "Jak"));
 
         Basket basket = new Basket();
         basket.add("Co", "Tam",1);

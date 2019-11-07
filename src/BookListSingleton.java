@@ -1,9 +1,16 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookList {
+public class BookListSingleton {
 
-    List<Book> bookList = new ArrayList<>()
+    private List<Book> bookList;
+
+    // singleton - there is only one instance
+    public static BookListSingleton INSTANCE = new BookListSingleton();
+
+    private BookListSingleton() {
+        bookList = new ArrayList<>();
+    }
 
     public void addNewBook(Book book) {
         if (book == null) {
@@ -13,8 +20,9 @@ public class BookList {
         }
     }
 
-    public Book findByTitleAndAuthor(String title, String author) {
+    public static Book findByTitleAndAuthor(String title, String author) {
         Book book = null;
+        List<Book> bookList = INSTANCE.bookList;
         for (int i = 0; i < bookList.size(); i++) {
             if (bookList.get(i).title.equals(title)
                     && bookList.get(i).author.equals(author)) {
