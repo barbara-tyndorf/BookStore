@@ -1,62 +1,63 @@
 import java.util.*;
+import java.util.Map.Entry;
 
 public class Basket {
 
-    List<Book> basket = new ArrayList<>();
-    Map<Book, Integer> basketContent = new HashMap<>();
+    Map<Book, Integer> content = new HashMap<>();
 
-
-    private Book getBookByName(String title, String author) {
-        Book book = null;
-        List<Book> bookList = new BookList().getBookList();
-        for (Book chosenBook : bookList) {
-            if (chosenBook.title.equals(title)
-                    && chosenBook.author.equals(author)) {
-                book = chosenBook;
-                break;
-            }
-        }
-        return book;
+    /**
+     * If you want to add book by name and author call booklist static method
+     * basket.add(BookList.byNameAndAuthor(name, author));
+     *
+     *
+     * @param title, author
+     */
+    public void add(String title, String author) {
+        add(title, author, 1);
     }
 
-    public void addToBasket(String title, String author, int amount) {
-        Book book = getBookByName(title, author);
-        basket.add(book);
-        basketContent.put(book,amount);
-    }
-
-
-    public void showBasket() {
-
-        System.out.println(basketContent.hashCode());
-        System.out.println(basketContent.keySet());
-//        for (int i = 0; i < basket.size(); i++) {
-//
-//            System.out.println(basket.get(i).title + " " +
-//                    basket.get(i).author + " " +
-//                    basket.get(i).price + " zł, ilość: "
-//                    + "szt.");
+    public void add(String title, String author, int amount) {
+        Book book = BookList.findByTitleAndAuthor(title, author);
+        if (content.containsKey(book)) {
+            int currentAmount = content.get(book);
+            content.put(book, currentAmount + amount);
+        } else {
+            content.put(book, amount);
         }
-//    }
+    }
 
     public void cleanBasket() {
-        basket.clear();
+        content.clear();
     }
 
-    public void removeBookFromBasket(String title, String author) {
-        Book book = getBookByName(title, author);
-        basket.remove(book);
+    public void remove(String title, String author) {
+        Book book = BookList.findByTitleAndAuthor(title, author);
+        content.remove(book);
     }
 
     public int totalAmountBooksInBasket() {
-        return basket.size();
+        int sum = 0;
+        for (Integer amount : content.values()) {
+            sum += amount;
+        }
+        return sum;
+        // lub tak
+        // sum = content.values().stream().reduce(0, (a,b) -> a + b);
+        // lub jeszcze prosciej tak
+        // return content.values().stream().mapToInt(Integer::intValue).sum();
     }
 
     public double totalPrice() {
         double totalPrice = 0;
-        for (int i = 0; i < basket.size(); i++) {
-            totalPrice = totalPrice + basket.get(i).price;
+        for(Entry<Book, Integer> entry : content.entrySet()) {
+            totalPrice += entry.getKey().price * entry.getValue();
         }
         return totalPrice;
+    }
+
+    public void showContent() {
+        for(Entry<Book, Integer> entry : content.entrySet()) {
+            System.out.println(String.format("Pozycja: %s \tIlość: %d\tCena: %.2f  ", entry.getKey(), entry.getValue(), entry.getKey().price * entry.getValue()));
+        }
     }
 }

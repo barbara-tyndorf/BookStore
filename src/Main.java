@@ -1,3 +1,5 @@
+import java.util.Map;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -18,17 +20,22 @@ public class Main {
         bookList1.addNewBook(book4);
         bookList1.addNewBook(book4);
 
-        Basket basket = new Basket();
-        basket.addToBasket("Jaś", "Małgosia", 2);
-        basket.addToBasket("Jaś", "Małgosia", 2);
-        basket.addToBasket("Jaś", "Małgosia", 2);
-        basket.addToBasket("Janek", "Gosia", 2);
-        basket.addToBasket("Janek", "Gosia", 2);
-//        basket.removeBookFromBasket("Janek", "Gosia");
+        System.out.println(BookList.findByTitleAndAuthor("Co", "Jak"));
 
-//        System.out.println(basket.totalPrice());
+
+
+        Basket basket = new Basket();
+        basket.add("Co", "Tam",1);
+        basket.add("Co", "Tam",2);
+        basket.add("Jak", "Tam",3);
+        basket.add("Jak", "Tam",1);
+        basket.add("Janek", "Gosia",1);
+        basket.add("Jaś", "Małgosia",1);
+        basket.add("Jaś", "Małgosia",1);
+
+
         System.out.println(basket.totalAmountBooksInBasket());
-        basket.showBasket();
-        System.out.println(basket.basket.get(1).title);
+//        basket.totalPrice();
+        basket.showContent();
     }
 }
