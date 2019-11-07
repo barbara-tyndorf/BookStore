@@ -16,10 +16,10 @@ public class BookList {
     public static Book findByTitleAndAuthor(String title, String author) {
         Book book = null;
         List<Book> bookList = new BookList().getBookList();
-        for (int i = 0; i < bookList.size(); i++) {
-            if (bookList.get(i).title.equals(title)
-                    && bookList.get(i).author.equals(author)) {
-                book = bookList.get(i);
+        for (Book chosenBook : bookList) {
+            if (chosenBook.title.equals(title)
+                    && chosenBook.author.equals(author)) {
+                book = chosenBook;
                 break;
             }
         }

@@ -7,7 +7,6 @@ public class Main {
         Book book1 = new Book("Janek", "Gosia", 40);
 
         BookList bookList = new BookList();
-        BookList bookList1 = new BookList();
 
         Book book3 = new Book("Co", "Tam", 15);
         Book book4 = new Book("Jak", "Tam", 30);
@@ -16,11 +15,11 @@ public class Main {
         bookList.addNewBook(book1);
         bookList.addNewBook(book);
 
-        bookList1.addNewBook(book3);
-        bookList1.addNewBook(book4);
-        bookList1.addNewBook(book4);
+        bookList.addNewBook(book3);
+        bookList.addNewBook(book4);
+        bookList.addNewBook(book4);
 
-        System.out.println(BookList.findByTitleAndAuthor("Co", "Jak"));
+        System.out.println(BookList.findByTitleAndAuthor("Jaś", "Małgosia"));
 
 
 
@@ -34,8 +33,8 @@ public class Main {
         basket.add("Jaś", "Małgosia",1);
 
 
-        System.out.println(basket.totalAmountBooksInBasket());
+//        System.out.println(basket.totalAmountBooksInBasket());
 //        basket.totalPrice();
-        basket.showContent();
+//        basket.showContent();
     }
 }
