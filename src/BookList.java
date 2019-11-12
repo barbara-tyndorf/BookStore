@@ -1,12 +1,16 @@
-import java.util.ArrayList;
+
 import java.util.List;
 
 public class BookList {
 
-    List<Book> bookList = new ArrayList<>();
 
     public void addNewBook(Book book) {
         BookListSingleton.INSTANCE.addNewBook(book);
+    }
+
+    int amountOfBooksAtStore(Book book) {
+        int amountOfBooks = BookListSingleton.INSTANCE.amountOfBooksAtStore(book);
+        return amountOfBooks;
     }
 
     public Book findByTitleAndAuthor(String title, String author) {

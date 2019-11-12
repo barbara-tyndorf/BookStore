@@ -21,6 +21,20 @@ public class Basket {
         }
     }
 
+    public boolean checkIfAmountOfBooksIsAvailable(String title, String author, int amount) {
+        Book book = booklist.findByTitleAndAuthor(title, author);
+        int amountOfBooksAtStore = booklist.amountOfBooksAtStore(book);
+        for (Entry<Book, Integer> entry : content.entrySet()) {
+            if (entry.getValue() > amountOfBooksAtStore || amount > amountOfBooksAtStore) {
+                System.out.println("Nie posiadamy podanej ilosci w magazynie. Dostępnych jest " + amountOfBooksAtStore + " szt.");
+                return false;
+            } else {
+                return true;
+            }
+        }
+        return true;
+    }
+
     public void cleanBasket() {
         content.clear();
     }
@@ -44,15 +58,16 @@ public class Basket {
 
     public double totalPrice() {
         double totalPrice = 0;
-        for(Entry<Book, Integer> entry : content.entrySet()) {
+        for (Entry<Book, Integer> entry : content.entrySet()) {
             totalPrice += entry.getKey().price * entry.getValue();
         }
         return totalPrice;
     }
 
     public void showContent() {
-        for(Entry<Book, Integer> entry : content.entrySet()) {
-            System.out.println(String.format("Pozycja: %s \tIlość: %d\tCena: %.2f  ", entry.getKey(), entry.getValue(), entry.getKey().price * entry.getValue()));
+        for (Entry<Book, Integer> entry : content.entrySet()) {
+            System.out.printf(("Pozycja: %s \tIlość: %d\tWartość: %.2f zł"),
+                    entry.getKey(), entry.getValue(), entry.getKey().price * entry.getValue());
         }
     }
 }
