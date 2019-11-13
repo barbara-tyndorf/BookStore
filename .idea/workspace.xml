@@ -4,17 +4,9 @@
     <list default="true" id="03d0d388-aa73-45cd-9bb4-97511b14714d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testy/Basket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testy/Basket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testy/BasketTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testy/BasketTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testy/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testy/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testy/BookList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testy/BookList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testy/BookListSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testy/BookListSingleton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testy/BookListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testy/BookListTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testy/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testy/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Basket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BasketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasketTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookListSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookListSingleton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BookListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -33,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+            <state relative-caret-position="404">
+              <caret line="28" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -42,7 +34,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="-174">
               <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
             </state>
           </provider>
@@ -52,13 +44,7 @@
         <entry file="file://$PROJECT_DIR$/src/BookList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-              <folding>
-                <element signature="e#507#508#0" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
-                <element signature="e#629#630#0" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-              </folding>
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -66,20 +52,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BookListSingleton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="22" column="40" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="40" />
+            <state relative-caret-position="187">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding>
+                <element signature="e#1245#1246#0" expanded="true" />
                 <element signature="e#1276#1277#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BookListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+            <state relative-caret-position="221">
+              <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,14 +74,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Basket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
+            <state relative-caret-position="493">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1378#1379#0" expanded="true" />
+                <element signature="e#1229#1230#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+            <state relative-caret-position="-1024">
+              <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,10 +127,10 @@
         <option value="$PROJECT_DIR$/src/Book.java" />
         <option value="$PROJECT_DIR$/src/BookList.java" />
         <option value="$PROJECT_DIR$/src/BookListSingleton.java" />
-        <option value="$PROJECT_DIR$/src/BookListTest.java" />
         <option value="$PROJECT_DIR$/src/BasketTest.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Basket.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/BookListTest.java" />
       </list>
     </option>
   </component>
@@ -158,7 +145,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,6 +170,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -210,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.BookListTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="testy" />
@@ -227,11 +214,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasketTest.testAddToBasket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BasketTest.testCleanBasket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testy" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BasketTest" />
-      <option name="METHOD_NAME" value="testAddToBasket" />
+      <option name="METHOD_NAME" value="testCleanBasket" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -257,19 +244,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BasketTest" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.BasketTest" />
+      <item itemvalue="JUnit.BasketTest.testCleanBasket" />
       <item itemvalue="JUnit.BookListTest.testAmountOfBooksAtStore" />
       <item itemvalue="JUnit.BookListTest" />
-      <item itemvalue="JUnit.BasketTest.testAddToBasket" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.BasketTest.testAddToBasket" />
         <item itemvalue="JUnit.BookListTest" />
         <item itemvalue="JUnit.BookListTest.testAmountOfBooksAtStore" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BasketTest" />
+        <item itemvalue="JUnit.BasketTest.testCleanBasket" />
       </list>
     </recent_temporary>
   </component>
@@ -287,35 +274,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BasketTest_testShowBasket - 2019.11.12 at 17h 27m 59s.xml">
-      <configuration name="BasketTest.testShowBasket" configurationId="JUnit" />
+    <history-entry file="BasketTest_testAddToBasket - 2019.11.13 at 11h 32m 19s.xml">
+      <configuration name="BasketTest.testAddToBasket" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_testTotalPrice - 2019.11.12 at 17h 28m 31s.xml">
-      <configuration name="BasketTest.testTotalPrice" configurationId="JUnit" />
+    <history-entry file="BasketTest_testAddToBasket - 2019.11.13 at 11h 33m 05s.xml">
+      <configuration name="BasketTest.testAddToBasket" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest - 2019.11.12 at 17h 28m 38s.xml">
+    <history-entry file="BasketTest_testAddToBasket - 2019.11.13 at 11h 33m 28s.xml">
+      <configuration name="BasketTest.testAddToBasket" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest_testAddToBasket - 2019.11.13 at 11h 33m 46s.xml">
+      <configuration name="BasketTest.testAddToBasket" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest - 2019.11.13 at 11h 34m 17s.xml">
       <configuration name="BasketTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BookListTest_testFindByTitleAndAuthor - 2019.11.12 at 17h 31m 57s.xml">
-      <configuration name="BookListTest.testFindByTitleAndAuthor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasketTest - 2019.11.12 at 17h 55m 57s.xml">
+    <history-entry file="BasketTest - 2019.11.13 at 11h 34m 21s.xml">
       <configuration name="BasketTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BookListTest_testAmountOfBooksAtStore - 2019.11.12 at 20h 39m 40s.xml">
+    <history-entry file="BasketTest_testCleanBasket - 2019.11.13 at 11h 35m 25s.xml">
+      <configuration name="BasketTest.testCleanBasket" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest_testCleanBasket - 2019.11.13 at 11h 36m 18s.xml">
+      <configuration name="BasketTest.testCleanBasket" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest - 2019.11.13 at 11h 37m 13s.xml">
+      <configuration name="BasketTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookListTest_testAmountOfBooksAtStore - 2019.11.13 at 11h 37m 50s.xml">
       <configuration name="BookListTest.testAmountOfBooksAtStore" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookListTest - 2019.11.12 at 20h 46m 08s.xml">
-      <configuration name="BookListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasketTest_testAddToBasket - 2019.11.12 at 20h 54m 16s.xml">
-      <configuration name="BasketTest.testAddToBasket" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasketTest_testAddToBasket - 2019.11.12 at 20h 54m 35s.xml">
-      <configuration name="BasketTest.testAddToBasket" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasketTest_testAddToBasket - 2019.11.12 at 20h 56m 22s.xml">
-      <configuration name="BasketTest.testAddToBasket" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -327,7 +314,7 @@
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.102874435" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.10438729" />
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -492,13 +479,6 @@
     <entry file="file://$PROJECT_DIR$/src/IndexOfFirstOccurance.java" />
     <entry file="file://$PROJECT_DIR$/src/YearsToOneMillion.java" />
     <entry file="file://$PROJECT_DIR$/src/Singleton.java" />
-    <entry file="file://$PROJECT_DIR$/src/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/AdoptOpenJDK/jdk-11.0.4.11-hotspot/lib/src.zip!/java.base/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -506,63 +486,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasketTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BookList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-          </folding>
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BookListSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="40" />
+        <state relative-caret-position="187">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding>
+            <element signature="e#1245#1246#0" expanded="true" />
             <element signature="e#1276#1277#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BookListTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+        <state relative-caret-position="-174">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasketTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1024">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Basket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1229#1230#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+        <state relative-caret-position="404">
+          <caret line="28" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Basket.java">
+    <entry file="file://$PROJECT_DIR$/src/BookListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
+        <state relative-caret-position="221">
+          <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1378#1379#0" expanded="true" />
           </folding>
         </state>
       </provider>

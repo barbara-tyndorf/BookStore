@@ -12,28 +12,24 @@ public class Basket {
 
     public void add(String title, String author, int amount) {
         Book book = booklist.findByTitleAndAuthor(title, author);
-        // dodać warunek, by nie przekraczać ilości książek w liście
+        int amountOfBooksAtStore = booklist.amountOfBooksAtStore(book);
+        String messageNotEnoughBooks = "Nie posiadamy podanej ilości w magazynie. Dostępnych jest %d szt.%nCzy dodać je do koszyka?";
         if (content.containsKey(book)) {
             int currentAmount = content.get(book);
-            content.put(book, currentAmount + amount);
+            if ((currentAmount + amount) <= amountOfBooksAtStore) {
+                content.put(book, currentAmount + amount);
+            } else {
+                System.out.printf(messageNotEnoughBooks, amountOfBooksAtStore);
+            }
         } else {
-            content.put(book, amount);
+            if (amount <= amountOfBooksAtStore) {
+                content.put(book, amount);
+            } else {
+                System.out.printf(messageNotEnoughBooks, amountOfBooksAtStore);
+            }
         }
     }
 
-    public boolean checkIfAmountOfBooksIsAvailable(String title, String author, int amount) {
-        Book book = booklist.findByTitleAndAuthor(title, author);
-        int amountOfBooksAtStore = booklist.amountOfBooksAtStore(book);
-        for (Entry<Book, Integer> entry : content.entrySet()) {
-            if (entry.getValue() > amountOfBooksAtStore || amount > amountOfBooksAtStore) {
-                System.out.println("Nie posiadamy podanej ilosci w magazynie. Dostępnych jest " + amountOfBooksAtStore + " szt.");
-                return false;
-            } else {
-                return true;
-            }
-        }
-        return true;
-    }
 
     public void cleanBasket() {
         content.clear();
@@ -50,10 +46,7 @@ public class Basket {
             sum += amount;
         }
         return sum;
-        // lub tak
-        // sum = content.values().stream().reduce(0, (a,b) -> a + b);
-        // lub jeszcze prosciej tak
-        // return content.values().stream().mapToInt(Integer::intValue).sum();
+
     }
 
     public double totalPrice() {

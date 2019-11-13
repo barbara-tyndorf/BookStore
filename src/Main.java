@@ -24,25 +24,11 @@ public class Main {
         bookList.addNewBook(book4);
 
         Basket basket = new Basket();
-        basket.add("Co", "Tam",1);
-        basket.add("Co", "Tam",2);
+        basket.add("Co", "Tam", 1);
+        basket.add("Co", "Tam", 2);
 
         System.out.println(bookList.amountOfBooksAtStore(book4));
-//        basket.add("Jak", "Tam",3);
-//        basket.add("Jak", "Tam",1);
-//        basket.add("Janek", "Gosia",1);
-//        basket.add("Janek", "Gosia",1);
-//        basket.add("Jaś", "Małgosia",1);
-//        basket.add("Jaś", "Małgosia",1);
+        basket.showContent();
 
-        System.out.println(basket.checkIfAmountOfBooksIsAvailable("Jak", "Tam", 8));
-
-//        System.out.println(bookList.getBookList().get(1).toString());
-//
-//
-//        System.out.println(basket.totalAmountBooksInBasket());
-//        System.out.println(basket.totalPrice());
-//        basket.showContent();
-//        basket.cleanBasket();
     }
 }

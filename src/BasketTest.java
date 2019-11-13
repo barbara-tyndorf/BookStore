@@ -24,10 +24,10 @@ public class BasketTest {
 
     @Test
     public void testAddToBasket() {
-        int sizeBefore = basket.content.size();
         bookList.addNewBook(book);
         bookList.addNewBook(book1);
         bookList.addNewBook(book1);
+        int sizeBefore = basket.content.size();
         basket.add(title1, author1,2);
         basket.add(title, author,1);
         int sizeAfter = basket.content.size();
@@ -54,6 +54,9 @@ public class BasketTest {
 
     @Test
     public void testCleanBasket() {
+        bookList.addNewBook(book);
+        bookList.addNewBook(book1);
+        bookList.addNewBook(book1);
         basket.add(title1, author1,2);
         basket.add(title, author,1);
         int sizeBefore = basket.totalAmountBooksInBasket();
@@ -64,6 +67,9 @@ public class BasketTest {
 
     @Test
     public void testRemoveBookFromBasket() {
+        bookList.addNewBook(book);
+        bookList.addNewBook(book1);
+        bookList.addNewBook(book1);
         basket.add(title1, author1,2);
         basket.add(title, author,1);
         int sizeBefore = basket.content.size();
@@ -74,6 +80,9 @@ public class BasketTest {
 
     @Test
     public void testTotalAmountBooksInBasket() {
+        bookList.addNewBook(book);
+        bookList.addNewBook(book1);
+        bookList.addNewBook(book1);
         basket.add(title1, author1,2);
         basket.add(title, author,1);
         int total = 3;

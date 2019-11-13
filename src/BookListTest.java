@@ -31,17 +31,19 @@ public class BookListTest {
 
     }
 
-//    @Test
-//    public void testAmountOfBooksAtStore(Book book) {
-//        bookList.addNewBook(book);
-//        bookList.addNewBook(book);
-//        bookList.addNewBook(book1);
-//        bookList.addNewBook(book1);
-//        bookList.addNewBook(book1);
-//        assertEquals(bookList.amountOfBooksAtStore(book), 2);
-//        assertEquals(bookList.amountOfBooksAtStore(book1), 3);
-//
-//    }
+    @Test
+    public void testAmountOfBooksAtStore(Book book) {
+        bookList.addNewBook(book);
+        bookList.addNewBook(book);
+        bookList.addNewBook(book1);
+        bookList.addNewBook(book1);
+        bookList.addNewBook(book1);
+        int amountBook = bookList.amountOfBooksAtStore(book);
+        int amountBook1 = bookList.amountOfBooksAtStore(book1);
+        assertEquals(amountBook, 2);
+        assertEquals(amountBook1, 3);
+
+    }
 
     @Test
     public void testFindByTitleAndAuthor() {
