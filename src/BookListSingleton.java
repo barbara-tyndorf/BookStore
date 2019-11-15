@@ -3,66 +3,47 @@ import java.util.List;
 
 public class BookListSingleton {
 
-    private List<Book> bookList;
+    private Map<Book> bookList;
 
     // singleton - there is only one instance
     static BookListSingleton INSTANCE = new BookListSingleton();
 
     private BookListSingleton() {
-        bookList = new ArrayList<>();
+        bookList = new HashMap<>();
     }
 
-    void addNewBook(Book book) {
+    void addNewBook(Book book, int amount) {
         if (book == null) {
             throw new IllegalArgumentException("Book parameters can not be empty");
         } else {
-            bookList.add(book);
+            bookList.put(book, amount);
         }
     }
 
-    int amountOfBooksAtStore(Book book) {
-        int amountOfBooks = 0;
-
-        for (int i = 0; i < bookList.size(); i++) {
-            if (book.equals(bookList.get(i))) {
-                amountOfBooks++;
-            }
-        }
-        return amountOfBooks;
+    Integer amountOfBooksAtStore(Book book) {
+       return booklist.get(book);
     }
 
-    static Book findByTitleAndAuthor(String title, String author) {
-        Book book = null;
-        List<Book> bookList = INSTANCE.bookList;
-        for (int i = 0; i < bookList.size(); i++) {
-            if (bookList.get(i).title.equals(title)
-                    && bookList.get(i).author.equals(author)) {
-                book = bookList.get(i);
-                break;
-            }
-        }
-        return book;
+    Book findByTitleAndAuthor(String title, String author) {
+        for (Book book : bookList.keySet()) {
+           if (book.title.equals(title) && book.author.equals(author)) {
+              return book;
+         }
+}    
     }
 
-    List<Book> getBookList() {
+
+    Map<Book> getBookList() {
         return bookList;
     }
 
     void removeBook(String title, String author) {
-        for (int i = 0; i < bookList.size(); i++) {
-            if (bookList.get(i).title.equals(title) && bookList.get(i).author.equals(author)) {
-                bookList.remove(i);
-                break;
-            }
-        }
+        Book book = findByTitleAndAuthor(title, author);
+        bookList.remove(book);
     }
 
     void changeBookPrice(String title, String author, double newPrice) {
-        for (int i = 0; i < bookList.size(); i++) {
-            if (bookList.get(i).title.equals(title) && bookList.get(i).author.equals(author)) {
-                bookList.get(i).price = newPrice;
-                break;
-            }
-        }
+        Book book = findByTitleAndAuthor(title, author);
+        book.price = newPrice;
     }
 }
